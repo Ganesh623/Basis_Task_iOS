@@ -25,3 +25,7 @@ Project is created with:
 * PageControl feature implemented and will work according to the CollectionView CardSwipe.
 * Implemented Horizontal Swipe Cards Functionality one at a time.
 * Used Custom classes for CollectionViewFlowLayout & CardView.
+
+## Demo
+
+![Basis_Task_CardViews - Demo Video](Basis_Task CardView Demo.mov)
