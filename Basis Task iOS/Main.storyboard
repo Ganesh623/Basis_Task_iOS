@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9Cn-F5-dAy">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Basis Task-->
+        <scene sceneID="yT2-ai-dSu">
+            <objects>
+                <viewController storyboardIdentifier="BasisCardViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="DqS-Et-6Jm" customClass="BasisCardViewController" customModule="Basis_Task_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ueP-bf-jmD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="6dT-Qa-jOF">
+                                <rect key="frame" x="16" y="182" width="382" height="668"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="IZc-GY-YRP">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Ier-7W-34s">
+                                <rect key="frame" x="16" y="810" width="382" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Rkd-93-O1s"/>
+                                </constraints>
+                                <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="currentPageIndicatorTintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </pageControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qxi-Cl-c7w">
+                                <rect key="frame" x="305" y="140" width="93" height="34"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" title="Start Again">
+                                    <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="goToFirstBtnAction:" destination="DqS-Et-6Jm" eventType="touchUpInside" id="bj7-U6-Xx4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="sC7-s6-PeF" firstAttribute="trailing" secondItem="Qxi-Cl-c7w" secondAttribute="trailing" constant="16" id="2oQ-zG-cOb"/>
+                            <constraint firstItem="6dT-Qa-jOF" firstAttribute="top" secondItem="Qxi-Cl-c7w" secondAttribute="bottom" constant="8" id="Fhm-vi-Of3"/>
+                            <constraint firstItem="Qxi-Cl-c7w" firstAttribute="top" secondItem="sC7-s6-PeF" secondAttribute="top" id="LLY-Ec-qNw"/>
+                            <constraint firstItem="sC7-s6-PeF" firstAttribute="trailing" secondItem="6dT-Qa-jOF" secondAttribute="trailing" constant="16" id="TdL-LX-tSz"/>
+                            <constraint firstItem="Ier-7W-34s" firstAttribute="centerX" secondItem="ueP-bf-jmD" secondAttribute="centerX" id="ZpA-WC-xZx"/>
+                            <constraint firstItem="sC7-s6-PeF" firstAttribute="trailing" secondItem="Ier-7W-34s" secondAttribute="trailing" constant="16" id="aSb-bC-9bE"/>
+                            <constraint firstItem="sC7-s6-PeF" firstAttribute="bottom" secondItem="Ier-7W-34s" secondAttribute="bottom" constant="12" id="oi7-qI-tg1"/>
+                            <constraint firstItem="Ier-7W-34s" firstAttribute="leading" secondItem="sC7-s6-PeF" secondAttribute="leading" constant="16" id="sXf-sW-ht9"/>
+                            <constraint firstItem="sC7-s6-PeF" firstAttribute="bottom" secondItem="6dT-Qa-jOF" secondAttribute="bottom" constant="12" id="uqk-8l-pOA"/>
+                            <constraint firstItem="6dT-Qa-jOF" firstAttribute="leading" secondItem="sC7-s6-PeF" secondAttribute="leading" constant="16" id="yIE-YJ-Ebx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="sC7-s6-PeF"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Basis Task" largeTitleDisplayMode="always" id="Z3k-uz-tvW"/>
+                    <connections>
+                        <outlet property="basisCollectionView" destination="6dT-Qa-jOF" id="DWb-Ex-DS8"/>
+                        <outlet property="basisPageControl" destination="Ier-7W-34s" id="sJ4-ND-1Me"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z0L-0r-dOi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="987" y="191"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="W5o-1S-sX1">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9Cn-F5-dAy" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="anV-Ox-jNe">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="28"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="DqS-Et-6Jm" kind="relationship" relationship="rootViewController" id="Rr4-9R-0GQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XsO-ME-tdh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="240.57971014492756" y="190.84821428571428"/>
+        </scene>
+    </scenes>
+</document>

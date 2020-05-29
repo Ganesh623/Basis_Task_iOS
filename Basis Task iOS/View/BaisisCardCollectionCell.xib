@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BaisisCardCollectionCell" id="gTV-IL-0wX" customClass="BaisisCardCollectionCell" customModule="Basis_Task_iOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="221" height="346"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="221" height="346"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NAN-rr-L3V">
+                        <rect key="frame" x="0.0" y="0.0" width="221" height="346"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="22U-Ef-fx5" customClass="CardView" customModule="Basis_Task_iOS" customModuleProvider="target">
+                                <rect key="frame" x="8" y="8" width="205" height="330"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="exr-27-t5c">
+                                        <rect key="frame" x="10" y="156.5" width="185" height="19.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-MediumItalic" family="Helvetica Neue" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cardImage" translatesAutoresizingMaskIntoConstraints="NO" id="X5C-Lw-3IW">
+                                        <rect key="frame" x="46.5" y="26.5" width="112" height="112"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="112" id="6iN-r1-HnX"/>
+                                            <constraint firstAttribute="height" constant="112" id="N7K-Pg-Ysx"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="X5C-Lw-3IW" firstAttribute="centerY" secondItem="22U-Ef-fx5" secondAttribute="centerY" multiplier="0.5" id="5eG-pK-y7x"/>
+                                    <constraint firstItem="exr-27-t5c" firstAttribute="centerX" secondItem="X5C-Lw-3IW" secondAttribute="centerX" id="eSg-bT-3LS"/>
+                                    <constraint firstItem="exr-27-t5c" firstAttribute="leading" secondItem="22U-Ef-fx5" secondAttribute="leading" constant="10" id="pcq-ff-h1z"/>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="exr-27-t5c" secondAttribute="bottom" constant="12" id="tFA-1Y-mmd"/>
+                                    <constraint firstAttribute="trailing" secondItem="exr-27-t5c" secondAttribute="trailing" constant="10" id="xSH-mw-0pr"/>
+                                    <constraint firstItem="exr-27-t5c" firstAttribute="top" secondItem="X5C-Lw-3IW" secondAttribute="bottom" constant="18" id="yZw-qs-bZz"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="22U-Ef-fx5" secondAttribute="bottom" constant="8" id="1d8-vo-pNh"/>
+                            <constraint firstAttribute="trailing" secondItem="22U-Ef-fx5" secondAttribute="trailing" constant="8" id="4vu-ck-fHE"/>
+                            <constraint firstItem="22U-Ef-fx5" firstAttribute="top" secondItem="NAN-rr-L3V" secondAttribute="top" constant="8" id="6u5-Si-cH8"/>
+                            <constraint firstItem="22U-Ef-fx5" firstAttribute="leading" secondItem="NAN-rr-L3V" secondAttribute="leading" constant="8" id="USM-Qm-Ka5"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="NAN-rr-L3V" secondAttribute="trailing" id="ogT-yp-1x9"/>
+                <constraint firstItem="NAN-rr-L3V" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="pB9-uj-9KX"/>
+                <constraint firstAttribute="bottom" secondItem="NAN-rr-L3V" secondAttribute="bottom" id="tIL-1l-N2z"/>
+                <constraint firstItem="NAN-rr-L3V" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="tUi-P2-jJw"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="221" height="346"/>
+            <connections>
+                <outlet property="basisCardView" destination="22U-Ef-fx5" id="6ek-Gs-xIT"/>
+                <outlet property="basisTextLabel" destination="exr-27-t5c" id="OGk-fh-4Cw"/>
+            </connections>
+            <point key="canvasLocation" x="119.56521739130436" y="93.75"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="cardImage" width="666" height="580"/>
+    </resources>
+</document>

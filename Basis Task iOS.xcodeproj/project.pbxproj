@@ -9,11 +9,19 @@
 /* Begin PBXBuildFile section */
 		040886EA2480F8A0006AAF27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040886E92480F8A0006AAF27 /* AppDelegate.swift */; };
 		040886EC2480F8A0006AAF27 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040886EB2480F8A0006AAF27 /* SceneDelegate.swift */; };
-		040886EE2480F8A0006AAF27 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040886ED2480F8A0006AAF27 /* ViewController.swift */; };
-		040886F12480F8A0006AAF27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 040886EF2480F8A0006AAF27 /* Main.storyboard */; };
 		040886F32480F8A2006AAF27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 040886F22480F8A2006AAF27 /* Assets.xcassets */; };
 		040886F62480F8A2006AAF27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 040886F42480F8A2006AAF27 /* LaunchScreen.storyboard */; };
 		040887012480F8A2006AAF27 /* Basis_Task_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040887002480F8A2006AAF27 /* Basis_Task_iOSTests.swift */; };
+		0408870C2480F8DF006AAF27 /* BasisCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0408870B2480F8DF006AAF27 /* BasisCardViewController.swift */; };
+		0408870E2480F900006AAF27 /* BasisCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0408870D2480F900006AAF27 /* BasisCardViewModel.swift */; };
+		040887112480FBE0006AAF27 /* BaisisCardCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0408870F2480FBE0006AAF27 /* BaisisCardCollectionCell.swift */; };
+		040887122480FBE0006AAF27 /* BaisisCardCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 040887102480FBE0006AAF27 /* BaisisCardCollectionCell.xib */; };
+		040887192480FCE0006AAF27 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040887182480FCE0006AAF27 /* CardView.swift */; };
+		0408871B248100F1006AAF27 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0408871A248100F1006AAF27 /* Constants.swift */; };
+		0408871D248102CD006AAF27 /* BasisDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0408871C248102CD006AAF27 /* BasisDataModel.swift */; };
+		040887212481065A006AAF27 /* CardDataItems.json in Resources */ = {isa = PBXBuildFile; fileRef = 040887202481065A006AAF27 /* CardDataItems.json */; };
+		040887252481130E006AAF27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 040887242481130E006AAF27 /* Main.storyboard */; };
+		0408872724814524006AAF27 /* CustomCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0408872624814524006AAF27 /* CustomCollectionViewLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,14 +38,22 @@
 		040886E62480F89F006AAF27 /* Basis Task iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Basis Task iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		040886E92480F8A0006AAF27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		040886EB2480F8A0006AAF27 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		040886ED2480F8A0006AAF27 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		040886F02480F8A0006AAF27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		040886F22480F8A2006AAF27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		040886F52480F8A2006AAF27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		040886F72480F8A2006AAF27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		040886FC2480F8A2006AAF27 /* Basis Task iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Basis Task iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		040887002480F8A2006AAF27 /* Basis_Task_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basis_Task_iOSTests.swift; sourceTree = "<group>"; };
 		040887022480F8A2006AAF27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0408870B2480F8DF006AAF27 /* BasisCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasisCardViewController.swift; sourceTree = "<group>"; };
+		0408870D2480F900006AAF27 /* BasisCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasisCardViewModel.swift; sourceTree = "<group>"; };
+		0408870F2480FBE0006AAF27 /* BaisisCardCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaisisCardCollectionCell.swift; sourceTree = "<group>"; };
+		040887102480FBE0006AAF27 /* BaisisCardCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaisisCardCollectionCell.xib; sourceTree = "<group>"; };
+		040887182480FCE0006AAF27 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		0408871A248100F1006AAF27 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		0408871C248102CD006AAF27 /* BasisDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasisDataModel.swift; sourceTree = "<group>"; };
+		040887202481065A006AAF27 /* CardDataItems.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CardDataItems.json; sourceTree = "<group>"; };
+		040887242481130E006AAF27 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		0408872624814524006AAF27 /* CustomCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,10 +95,12 @@
 		040886E82480F89F006AAF27 /* Basis Task iOS */ = {
 			isa = PBXGroup;
 			children = (
-				040886E92480F8A0006AAF27 /* AppDelegate.swift */,
-				040886EB2480F8A0006AAF27 /* SceneDelegate.swift */,
-				040886ED2480F8A0006AAF27 /* ViewController.swift */,
-				040886EF2480F8A0006AAF27 /* Main.storyboard */,
+				0408871E248105BB006AAF27 /* AppDelegates */,
+				040887132480FBF3006AAF27 /* Model */,
+				040887142480FBFA006AAF27 /* View */,
+				040887152480FC07006AAF27 /* ViewModel */,
+				040887172480FCD0006AAF27 /* Helpers */,
+				040887242481130E006AAF27 /* Main.storyboard */,
 				040886F22480F8A2006AAF27 /* Assets.xcassets */,
 				040886F42480F8A2006AAF27 /* LaunchScreen.storyboard */,
 				040886F72480F8A2006AAF27 /* Info.plist */,
@@ -97,6 +115,52 @@
 				040887022480F8A2006AAF27 /* Info.plist */,
 			);
 			path = "Basis Task iOSTests";
+			sourceTree = "<group>";
+		};
+		040887132480FBF3006AAF27 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0408871C248102CD006AAF27 /* BasisDataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		040887142480FBFA006AAF27 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0408870B2480F8DF006AAF27 /* BasisCardViewController.swift */,
+				0408870F2480FBE0006AAF27 /* BaisisCardCollectionCell.swift */,
+				040887102480FBE0006AAF27 /* BaisisCardCollectionCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		040887152480FC07006AAF27 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0408870D2480F900006AAF27 /* BasisCardViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		040887172480FCD0006AAF27 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				040887182480FCE0006AAF27 /* CardView.swift */,
+				0408871A248100F1006AAF27 /* Constants.swift */,
+				040887202481065A006AAF27 /* CardDataItems.json */,
+				0408872624814524006AAF27 /* CustomCollectionViewLayout.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		0408871E248105BB006AAF27 /* AppDelegates */ = {
+			isa = PBXGroup;
+			children = (
+				040886E92480F8A0006AAF27 /* AppDelegate.swift */,
+				040886EB2480F8A0006AAF27 /* SceneDelegate.swift */,
+			);
+			path = AppDelegates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,9 +244,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				040887212481065A006AAF27 /* CardDataItems.json in Resources */,
+				040887252481130E006AAF27 /* Main.storyboard in Resources */,
 				040886F62480F8A2006AAF27 /* LaunchScreen.storyboard in Resources */,
 				040886F32480F8A2006AAF27 /* Assets.xcassets in Resources */,
-				040886F12480F8A0006AAF27 /* Main.storyboard in Resources */,
+				040887122480FBE0006AAF27 /* BaisisCardCollectionCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,9 +266,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				040886EE2480F8A0006AAF27 /* ViewController.swift in Sources */,
 				040886EA2480F8A0006AAF27 /* AppDelegate.swift in Sources */,
+				040887112480FBE0006AAF27 /* BaisisCardCollectionCell.swift in Sources */,
 				040886EC2480F8A0006AAF27 /* SceneDelegate.swift in Sources */,
+				0408870C2480F8DF006AAF27 /* BasisCardViewController.swift in Sources */,
+				0408872724814524006AAF27 /* CustomCollectionViewLayout.swift in Sources */,
+				0408871D248102CD006AAF27 /* BasisDataModel.swift in Sources */,
+				0408871B248100F1006AAF27 /* Constants.swift in Sources */,
+				040887192480FCE0006AAF27 /* CardView.swift in Sources */,
+				0408870E2480F900006AAF27 /* BasisCardViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,14 +297,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		040886EF2480F8A0006AAF27 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				040886F02480F8A0006AAF27 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		040886F42480F8A2006AAF27 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -364,6 +428,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Basis Task iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -381,6 +446,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Basis Task iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
